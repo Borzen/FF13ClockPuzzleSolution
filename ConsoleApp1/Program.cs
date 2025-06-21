@@ -60,7 +60,8 @@ internal class Program
         }
         finally
         {
-            Console.WriteLine("This is a pu")
+            Console.WriteLine("This is a pause so you can read evertying\r\n press anykey when done");
+            Console.ReadKey();
         }
     }
 }
