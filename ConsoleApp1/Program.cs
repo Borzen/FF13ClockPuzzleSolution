@@ -47,15 +47,6 @@ internal class Program
         {
             Task.WhenAll(clockSolutions).Wait();
             var solutions = clockSolutions.Where(x => x.Result.Solveable).Select(x=>x.Result).ToList();
-            StringWriter sw = new StringWriter();
-            foreach (var clockSolution in clockSolutions)
-            {
-                sw.WriteLine(clockSolution.ToString());
-                sw.WriteLine("\r\n\r\n\r\n");
-            }
-            if (File.Exists(@"C:\Users\borzen\source\repos\ff13Clock\clockSolutions.txt"))
-                File.Delete(@"C:\Users\borzen\source\repos\ff13Clock\clockSolutions.txt");
-            File.WriteAllText(@"C:\Users\borzen\source\repos\ff13Clock\clockSolutions.txt", sw.ToString());
             foreach(var solution in solutions)
             { 
                 Console.WriteLine("Positions: " + solution.PrintSolutionPos());
@@ -66,6 +57,10 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+            Console.WriteLine("This is a pu")
         }
     }
 }
