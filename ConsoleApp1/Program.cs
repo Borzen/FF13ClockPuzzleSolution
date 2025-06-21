@@ -12,7 +12,7 @@ internal class Program
         while (clock.Count <= 0)
         {
             clock = new List<int>();
-            Console.WriteLine("enter a clock from noon to noon seperated by commas");
+            Console.WriteLine("enter a clock starting at noon clockwise seperated by commas");
             Console.WriteLine("Press Q to quit");
             var clockString = Console.ReadLine();
             var clockSplit = clockString.Split(',');
