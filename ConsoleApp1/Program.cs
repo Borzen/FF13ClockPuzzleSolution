@@ -5,10 +5,17 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        var keepRunning = true;
+        while (keepRunning)
+        {
+           keepRunning = MainLoop();
+        }
+    }
+
+    private static bool MainLoop()
+    {
         List<int> clock = new List<int>();
-        //{
-        //    3, 6, 2, 4, 6, 6, 2, 5, 5, 4, 5, 5
-        //};
+
         while (clock.Count <= 0)
         {
             clock = new List<int>();
@@ -18,7 +25,7 @@ internal class Program
             var clockSplit = clockString.Split(',');
             if (string.Equals(clockString, "q", StringComparison.OrdinalIgnoreCase))
             {
-                return;
+                return false;
             }
 
             foreach (var clockItem in clockSplit)
@@ -31,6 +38,7 @@ internal class Program
                 {
                     Console.WriteLine("Error Reading: " + clockItem);
                     Console.WriteLine("Please try again");
+                    Console.Clear();
 
                 }
             }
@@ -42,26 +50,34 @@ internal class Program
         {
             clockSolutions.Add(solver.SolveAsync(i));
         }
-
         try
         {
             Task.WhenAll(clockSolutions).Wait();
-            var solutions = clockSolutions.Where(x => x.Result.Solveable).Select(x=>x.Result).ToList();
-            foreach(var solution in solutions)
-            { 
+            var solutions = clockSolutions.Where(x => x.Result.Solveable).Select(x => x.Result).ToList();
+            foreach (var solution in solutions)
+            {
                 Console.WriteLine("Positions: " + solution.PrintSolutionPos());
                 Console.WriteLine("Numbers: " + solution.PrintSolution());
                 Console.WriteLine();
+            }
+            Console.WriteLine("This is a pause so you can read evertying\r\npress Q to quit and anything else to run again.");
+            var key = Console.ReadKey();
+            if(key.Key == ConsoleKey.Q)
+            {
+                return false;
+            }
+            else
+            {
+                Console.Clear();
+                return true;
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex.ToString());
-        }
-        finally
-        {
-            Console.WriteLine("This is a pause so you can read evertying\r\n press anykey when done");
-            Console.ReadKey();
+            Console.WriteLine("\r\n\r\nSomething broke HARD. Please copy the console's output, the clock you were trying to solve and put them in a github issue here. https://github.com/Borzen/FF13ClockPuzzleSolution/issues ");
+            Console.ReadLine();
+            return false;
         }
     }
 }
