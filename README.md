@@ -45,8 +45,9 @@ Numbers: 5 -> 6 -> 5 -> 2 -> 3 -> 4 -> 6 -> 5 -> 2 -> 6 -> 5 -> 4
 This is telling you what position starting at noon/0 and counted clockwise (this is so if you have less than 12 spots you just count from the top).
 The numbers are also included so you can have a reference on what number you are hitting.
 
-##How the puzzle works.
 ---
+##How the puzzle works.
+
 
 Ok instead of reading 2 walls of text im gonna break it down easily.
 
@@ -57,8 +58,8 @@ Ok instead of reading 2 walls of text im gonna break it down easily.
   - If the hands end up on the same number you can only select that number.
     
 You then just shampoo (rinse, lather and repeat) the process until you clear or both hands hit empty spots. If that happens you press X/Square/Whatever the key is on the keyboard and it resests the puzzle to a different random puzzle with a different solution. Sometimes there is no timer and the puzzle wont reset when you reset. 
----
 
+---
 
 This is gonna attempt to be as SEO friendly as possible so someone can find this and use it. Just for some ideas on how bad this is... right now I have about tenth of my playtime just dedicated to these puzzles.
 
