@@ -75,7 +75,7 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine(ex.ToString());
-            Console.WriteLine("\r\n\r\nSomething broke HARD. Please copy the console's output, the clock you were trying to solve and put them in a github issue here. https://github.com/Borzen/FF13ClockPuzzleSolution/issues ");
+            Console.WriteLine("\r\n\r\nSomething broke HARD. Please copy the console's output, the clock you were trying to solve and put them in a github issue here. https://github.com/Borzen/FF13ClockPuzzleSolution/issues/new ");
             Console.ReadLine();
             return false;
         }
