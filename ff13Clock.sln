@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FF13ClockSolver", "ConsoleApp1\FF13ClockSolver.csproj", "{9AB8AAE5-1BB9-4017-BB2D-92632A8F5602}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AB8AAE5-1BB9-4017-BB2D-92632A8F5602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB8AAE5-1BB9-4017-BB2D-92632A8F5602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB8AAE5-1BB9-4017-BB2D-92632A8F5602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB8AAE5-1BB9-4017-BB2D-92632A8F5602}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {612856B1-C20A-4F67-8188-722BEC27A23B}
+	EndGlobalSection
+EndGlobal
