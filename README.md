@@ -41,11 +41,12 @@ Numbers: 2 -> 5 -> 6 -> 5 -> 2 -> 3 -> 4 -> 6 -> 5 -> 6 -> 5 -> 4
 Positions: 8 -> 1 -> 7 -> 2 -> 0 -> 9 -> 5 -> 11 -> 6 -> 4 -> 10 -> 3
 Numbers: 5 -> 6 -> 5 -> 2 -> 3 -> 4 -> 6 -> 5 -> 2 -> 6 -> 5 -> 4
 ```
+
 This is telling you what position starting at noon/0 and counted clockwise (this is so if you have less than 12 spots you just count from the top).
 The numbers are also included so you can have a reference on what number you are hitting.
----
 
 ##How the puzzle works.
+---
 
 Ok instead of reading 2 walls of text im gonna break it down easily.
 
