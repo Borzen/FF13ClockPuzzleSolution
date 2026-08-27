@@ -1,7 +1,7 @@
-# Final Fantasty 13-2 Clock Puzzle Solver
+# Final Fantasy 13-2 Clock Puzzle Solver
 ---
 
-This is a solver for the annoying clock puzzles in Final Fantasty 12-2. Someone used to host a solver as a website but that site no longer exits. So after living through some mild hell I decided to write a solver. While this is a console app right now if someone knows how to put this on github pages easily please do and if you let me know I will link it.
+This is a solver for the annoying clock puzzles in Final Fantasy 13-2. Someone used to host a solver as a website but that site no longer exits. So after living through some mild hell I decided to write a solver. While this is a console app right now if someone knows how to put this on github pages easily please do and if you let me know I will link it.
 You might be seeing this and be thinking "these puzzles are not that bad" and you would be wrong. These are hell. 
 
 ---
