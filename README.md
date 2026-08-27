@@ -46,7 +46,7 @@ This is telling you what position starting at noon/0 and counted clockwise (this
 The numbers are also included so you can have a reference on what number you are hitting.
 
 ---
-##How the puzzle works.
+## How the puzzle works.
 
 
 Ok instead of reading 2 walls of text im gonna break it down easily.
